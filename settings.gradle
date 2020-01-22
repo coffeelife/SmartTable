@@ -1,0 +1,2 @@
+include ':app', ':SmartTable'
+rootProject.name='My Application'

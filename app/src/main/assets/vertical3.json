@@ -14,9 +14,10 @@
         "col5": "71",
         "orgName": "数据1",
         "jumpDTO" : {
-          "icon" : "https://gj-prod-1256038144.cos.ap-beijing.myqcloud.com/common/1573628154546/biaoqian@3x.png",
+          "icon" : "https://www.missleslie.cn/biaoqian.png",
           "paramMap" : {
-          }
+          },
+          "actionType": 1
         },
         "drillDownDTO": {
           "paramMap": {
@@ -36,9 +37,10 @@
         "col5": "56",
         "orgName": "数据2",
         "jumpDTO" : {
-          "icon" : "https://gj-prod-1256038144.cos.ap-beijing.myqcloud.com/common/1573628154546/biaoqian@3x.png",
+          "icon" : "https://www.missleslie.cn/biaoqian.png",
           "paramMap" : {
-          }
+          },
+          "actionType": 1
         },
         "drillDownDTO": {
           "paramMap": {
@@ -59,9 +61,10 @@
         "col5": "50",
         "orgName": "数据3",
         "jumpDTO" : {
-          "icon" : "https://gj-prod-1256038144.cos.ap-beijing.myqcloud.com/common/1573628154546/biaoqian@3x.png",
+          "icon" : "https://www.missleslie.cn/biaoqian.png",
           "paramMap" : {
-          }
+          },
+          "actionType": 1
         },
         "drillDownDTO": {
           "paramMap": {
@@ -81,9 +84,10 @@
         "col5": "154",
         "orgName": "数据4",
         "jumpDTO" : {
-          "icon" : "https://gj-prod-1256038144.cos.ap-beijing.myqcloud.com/common/1573628154546/biaoqian@3x.png",
+          "icon" : "https://www.missleslie.cn/biaoqian.png",
           "paramMap" : {
-          }
+          },
+          "actionType": 1
         },
         "drillDownDTO": {
           "paramMap": {
@@ -103,9 +107,10 @@
         "col5": "64",
         "orgName": "数据5",
         "jumpDTO" : {
-          "icon" : "https://gj-prod-1256038144.cos.ap-beijing.myqcloud.com/common/1573628154546/biaoqian@3x.png",
+          "icon" : "https://www.missleslie.cn/biaoqian.png",
           "paramMap" : {
-          }
+          },
+          "actionType": 1
         },
         "drillDownDTO": {
           "paramMap": {
@@ -142,7 +147,7 @@
   },
   "relatedInfoDTO": {
     "hasRankInfo": true,
-    "hasGoodsInfo": false
+    "hasGoodsInfo": true
   },
   "tableHeadList": [
     {

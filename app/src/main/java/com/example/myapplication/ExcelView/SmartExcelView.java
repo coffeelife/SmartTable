@@ -86,6 +86,7 @@ public class SmartExcelView extends FrameLayout {
     private boolean isAuto = false;//是否标题小于5自动适配自动
     private ExcelParseUtils.ExcelFormData mExcelFormData;
     private boolean isVertical = false;
+    Map<String, Bitmap> map = null;
 
     /**
      * 事件回调监听
@@ -489,7 +490,7 @@ public class SmartExcelView extends FrameLayout {
         }
 
         List<Column<String>> columns = tableData.getArrayColumns();
-        final Map<String, Bitmap> map = new HashMap<>();
+        map = new HashMap<>();
         for (int i = 0; i < columns.size(); i++) {
             Column<String> curColumn = columns.get(i);
             if (mExcelFormData.isSort) {
@@ -558,6 +559,7 @@ public class SmartExcelView extends FrameLayout {
                                     if (mExcelFormData.paramsBeans != null) {
                                         ExcelParamsBean bean = mExcelFormData.paramsBeans.get(position);
                                         if (bean != null && bean.jumpDTO != null) {
+                                            //加载网络图的方法
                                             Glide.with(mContext).asBitmap()
                                                     .load(bean.jumpDTO.icon).apply(new RequestOptions().error(R.drawable.icon_menu_default)
                                                     .placeholder(R.drawable.icon_menu_default))
@@ -1167,7 +1169,7 @@ public class SmartExcelView extends FrameLayout {
      */
     private void setParentColumns(final ArrayTableData<String> tableData, final List<String> titleList) {
         List<Column<String>> columns = tableData.getArrayColumns();
-        final Map<String, Bitmap> map = new HashMap<>();
+        map = new HashMap<>();
 
         actionsParent = new ArrayList<>();
         if (!ArrayUtils.isEmpty(mExcelFormData.paramsBeans)) {
@@ -1553,7 +1555,7 @@ public class SmartExcelView extends FrameLayout {
      */
     private void setColumns(final ArrayTableData<String> tableData, final List<String> titleList) {
         List<Column<String>> columns = tableData.getArrayColumns();
-        final Map<String, Bitmap> map = new HashMap<>();
+        map = new HashMap<>();
         actionsFixed = new ArrayList<>();
         if (!ArrayUtils.isEmpty(mExcelFormData.paramsBeans)) {
             for (int i = 0; i < mExcelFormData.paramsBeans.size(); i++) {

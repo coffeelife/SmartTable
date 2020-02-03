@@ -118,13 +118,6 @@ public class MenuResBean implements Serializable{
     }
 
     public static class MenuDTOListBean implements Serializable{
-        /**
-         * action : 1
-         * child : [{"action":1,"icon":1,"id":461,"menuType":false,"name":"门店业绩"}]
-         * icon : 1
-         * id : 458
-         * name : 运营
-         */
 
         private String action;
         private String icon;

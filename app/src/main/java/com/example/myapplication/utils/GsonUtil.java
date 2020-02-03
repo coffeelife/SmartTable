@@ -1,5 +1,6 @@
 package com.example.myapplication.utils;
 
+import android.content.Context;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
@@ -10,9 +11,12 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Created by lc on 2017/5/17.
@@ -233,6 +237,43 @@ public class GsonUtil {
     public static JsonArray getRootJsonArrayByInputStream(Reader jsonStr) {
         JsonArray obj = new JsonParser().parse(jsonStr).getAsJsonArray();
         return obj;
+    }
+
+    /**
+     * 获取去最原始的数据信息
+     * @return json data
+     */
+    public static String getOriginalFundData(Context context,String filename) {
+        InputStream input = null;
+        try {
+            //taipingyang.json文件名称
+            input = context.getAssets().open(filename);
+            String json = convertStreamToString(input);
+            return json;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    /**
+     * input 流转换为字符串
+     *
+     * @param is
+     * @return
+     */
+    private static String convertStreamToString(InputStream is) {
+        String s = null;
+        try {
+            //格式转换
+            Scanner scanner = new Scanner(is, "UTF-8").useDelimiter("\\A");
+            if (scanner.hasNext()) {
+                s = scanner.next();
+            }
+            is.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return s;
     }
 
 }

@@ -1,0 +1,153 @@
+{
+  "tableTitle": "组织排名",
+  "filterType": null,
+  "growthRankListDTO": null,
+  "growthRankListDTOPageInfo": {
+    "total": 11,
+    "list": [
+      {
+        "col0": "69,839",
+        "col1": "--",
+        "col2": "27,423",
+        "col3": "39.3%",
+        "col4": "988",
+        "col5": "71",
+        "orgName": "数据1",
+        "jumpDTO": null,
+        "drillDownDTO": {
+          "paramMap": {
+            "ascendingOrder": "",
+            "orderBy": "",
+            "drillDown": "1"
+          },
+          "actionType": 1
+        }
+      },
+      {
+        "col0": "36,021",
+        "col1": "--",
+        "col2": "14,975",
+        "col3": "41.6%",
+        "col4": "641",
+        "col5": "56",
+        "orgName": "数据2",
+        "jumpDTO": null,
+        "drillDownDTO": {
+          "paramMap": {
+            "ascendingOrder": "",
+            "orderBy": "",
+            "drillDown": "1"
+          },
+          "actionType": 1
+        },
+        "businessName": null
+      },
+      {
+        "col0": "34,256",
+        "col1": "--",
+        "col2": "15,648",
+        "col3": "45.7%",
+        "col4": "681",
+        "col5": "50",
+        "orgName": "数据3",
+        "jumpDTO": null,
+        "drillDownDTO": {
+          "paramMap": {
+            "ascendingOrder": "",
+            "orderBy": "",
+            "drillDown": "1"
+          },
+          "actionType": 1
+        }
+      },
+      {
+        "col0": "27,521",
+        "col1": "--",
+        "col2": "10,080",
+        "col3": "36.6%",
+        "col4": "179",
+        "col5": "154",
+        "orgName": "数据4",
+        "jumpDTO": null,
+        "drillDownDTO": {
+          "paramMap": {
+            "ascendingOrder": "",
+            "orderBy": "",
+            "drillDown": "1"
+          },
+          "actionType": 1
+        }
+      },
+      {
+        "col0": "25,848",
+        "col1": "--",
+        "col2": "9,156",
+        "col3": "35.4%",
+        "col4": "401",
+        "col5": "64",
+        "orgName": "数据5",
+        "jumpDTO": null,
+        "drillDownDTO": {
+          "paramMap": {
+            "ascendingOrder": "",
+            "orderBy": "",
+            "drillDown": "1"
+          },
+          "actionType": 1
+        }
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 5,
+    "size": 0,
+    "startRow": 0,
+    "endRow": 0,
+    "pages": 0,
+    "prePage": 0,
+    "nextPage": 0,
+    "isFirstPage": false,
+    "isLastPage": false,
+    "hasPreviousPage": false,
+    "hasNextPage": false,
+    "navigatePages": 0,
+    "navigatepageNums": null,
+    "navigateFirstPage": 0,
+    "navigateLastPage": 0,
+    "firstPage": 0,
+    "lastPage": 0
+  },
+  "tableOrderByDTO": {
+    "orderBy": "col0",
+    "ascendingOrder": 2
+  },
+  "relatedInfoDTO": {
+    "hasRankInfo": true,
+    "hasGoodsInfo": false,
+    "menuId": "GOODSgoods_rank",
+    "num": null,
+    "goodsOrderByDTO": null
+  },
+  "tableHeadList": [
+    {
+      "isOrderBy": 2,
+      "key": "orgName",
+      "value": "表头1"
+    },
+    {
+      "isOrderBy": 1,
+      "key": "col0",
+      "value": "表头2"
+    },
+    {
+      "isOrderBy": 1,
+      "key": "col1",
+      "value": "表头3"
+    },
+    {
+      "isOrderBy": 1,
+      "key": "col2",
+      "value": "表头4"
+    }
+  ],
+  "filterDTO": null
+}

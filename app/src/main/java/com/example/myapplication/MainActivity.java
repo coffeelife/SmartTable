@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuAdapter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -44,7 +45,16 @@ public class MainActivity extends AppCompatActivity {
         gvMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(),menus.get(position).getName(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), menus.get(position).getName(), Toast.LENGTH_LONG).show();
+                switch (position) {
+                    case 0:
+                        Intent intent = new Intent(getBaseContext(),VerticalExcelActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        getBaseContext().startActivity(intent);
+                        break;
+                    default:
+                        break;
+                }
             }
         });
     }

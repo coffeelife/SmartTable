@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * 竖向表格
  */
 public class VerticalExcelActivity extends AppCompatActivity {
-    private SmartExcelView excelVertical,excelVertical2;
+    private SmartExcelView excelVertical,excelVertical2,excelVertical3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,13 @@ public class VerticalExcelActivity extends AppCompatActivity {
         initView();
         initDatas();
         initDatas2();
+        initDatas3();
     }
 
     private void initView() {
         excelVertical = findViewById(R.id.view_excel);
         excelVertical2 = findViewById(R.id.view_excel2);
+        excelVertical3 = findViewById(R.id.view_excel3);
     }
 
     private void initDatas() {
@@ -46,6 +48,14 @@ public class VerticalExcelActivity extends AppCompatActivity {
         ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
         ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
         excelVertical2.showVerticalExcel(formData);
+    }
+
+    private void initDatas3() {
+        String json = GsonUtil.getOriginalFundData(getBaseContext(),"vertical3.json");
+        JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
+        ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
+        ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
+        excelVertical3.showVerticalExcel(formData);
     }
 
 

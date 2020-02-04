@@ -2,6 +2,7 @@ package com.example.myapplication.ExcelView;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Paint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -555,25 +556,28 @@ public class SmartExcelView extends FrameLayout {
                         curColumn.setDrawFormat(new BitmapDrawFormat<String>(size, size) {
                             @Override
                             protected Bitmap getBitmap(final String s, String value, final int position) {
-                                if (map.get(s) == null) {
-                                    if (mExcelFormData.paramsBeans != null) {
-                                        ExcelParamsBean bean = mExcelFormData.paramsBeans.get(position);
-                                        if (bean != null && bean.jumpDTO != null) {
-                                            //加载网络图的方法
-                                            Glide.with(mContext).asBitmap()
-                                                    .load(bean.jumpDTO.icon).apply(new RequestOptions().error(R.drawable.icon_menu_default)
-                                                    .placeholder(R.drawable.icon_menu_default))
-                                                    .into(new SimpleTarget<Bitmap>() {
-                                                        @Override
-                                                        public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
-                                                            map.put(s + position, resource);
-                                                            table.invalidate();
-                                                        }
-                                                    });
-                                        }
-                                    }
-                                }
-                                return map.get(s + position);
+                                //网络图加载方法
+//                                if (map.get(s) == null) {
+//                                    if (mExcelFormData.paramsBeans != null) {
+//                                        ExcelParamsBean bean = mExcelFormData.paramsBeans.get(position);
+//                                        if (bean != null && bean.jumpDTO != null) {
+//                                            //加载网络图的方法
+//                                            Glide.with(mContext).asBitmap()
+//                                                    .load(bean.jumpDTO.icon).apply(new RequestOptions().error(R.drawable.icon_menu_default)
+//                                                    .placeholder(R.drawable.icon_menu_default))
+//                                                    .into(new SimpleTarget<Bitmap>() {
+//                                                        @Override
+//                                                        public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+//                                                            map.put(s + position, resource);
+//                                                            table.invalidate();
+//                                                        }
+//                                                    });
+//                                        }
+//                                    }
+//                                }
+//                                return map.get(s + position);
+                                //本地图加载方法
+                                return BitmapFactory.decodeResource(mContext.getResources(), R.drawable.biaoqian);
                             }
                         });
                         curColumn.setOnColumnItemClickListener(new OnColumnItemClickListener<String>() {

@@ -122,10 +122,7 @@
   },
   "relatedInfoDTO": {
     "hasRankInfo": true,
-    "hasGoodsInfo": false,
-    "menuId": "GOODSgoods_rank",
-    "num": null,
-    "goodsOrderByDTO": null
+    "hasGoodsInfo": false
   },
   "tableHeadList": [
     {

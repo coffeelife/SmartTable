@@ -20,7 +20,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         }
       },
       {
@@ -38,7 +38,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         },
         "businessName": null
       },
@@ -57,7 +57,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         }
       },
       {
@@ -75,7 +75,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         }
       },
       {
@@ -93,7 +93,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         }
       }
     ],

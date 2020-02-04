@@ -1,5 +1,5 @@
 {
-  "tableTitle": "排名",
+  "tableTitle": "组织排名",
   "filterType": null,
   "growthRankListDTO": null,
   "growthRankListDTOPageInfo": {
@@ -20,7 +20,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         }
       },
       {
@@ -38,7 +38,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         },
         "businessName": null
       },
@@ -57,7 +57,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         }
       },
       {
@@ -75,7 +75,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         }
       },
       {
@@ -93,7 +93,7 @@
             "orderBy": "",
             "drillDown": "1"
           },
-          "actionType": 1
+          "actionType": 0
         }
       }
     ],
@@ -121,7 +121,7 @@
     "ascendingOrder": 2
   },
   "relatedInfoDTO": {
-    "hasRankInfo": true,
+    "hasRankInfo": false,
     "hasGoodsInfo": false
   },
   "tableHeadList": [
@@ -144,21 +144,6 @@
       "isOrderBy": 1,
       "key": "col2",
       "value": "表头4"
-    },
-    {
-      "isOrderBy": 1,
-      "key": "col3",
-      "value": "表头5"
-    },
-    {
-      "isOrderBy": 1,
-      "key": "col4",
-      "value": "表头6"
-    },
-    {
-      "isOrderBy": 1,
-      "key": "col5",
-      "value": "表头7"
     }
   ],
   "filterDTO": null

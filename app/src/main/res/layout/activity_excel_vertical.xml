@@ -34,14 +34,50 @@
             android:layout_height="wrap_content" />
 
         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="头部四个自适应宽度带图片"
+        android:padding="10dp"
+        android:textSize="16dp" />
+
+        <com.example.myapplication.ExcelView.SmartExcelView
+            android:id="@+id/view_excel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="头部四个自适应宽度带图片"
+            android:text="不带下钻"
             android:padding="10dp"
             android:textSize="16dp" />
 
         <com.example.myapplication.ExcelView.SmartExcelView
-            android:id="@+id/view_excel3"
+            android:id="@+id/view_excel4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="部分带下钻部分不带下钻"
+            android:padding="10dp"
+            android:textSize="16dp" />
+
+        <com.example.myapplication.ExcelView.SmartExcelView
+            android:id="@+id/view_excel5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不带排序"
+            android:padding="10dp"
+            android:textSize="16dp" />
+
+        <com.example.myapplication.ExcelView.SmartExcelView
+            android:id="@+id/view_excel6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

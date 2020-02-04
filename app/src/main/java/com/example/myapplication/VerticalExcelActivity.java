@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * 竖向表格
  */
 public class VerticalExcelActivity extends AppCompatActivity {
-    private SmartExcelView excelVertical,excelVertical2,excelVertical3;
+    private SmartExcelView excelVertical,excelVertical2,excelVertical3,excelVertical4,excelVertical5,excelVertical6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +26,18 @@ public class VerticalExcelActivity extends AppCompatActivity {
         initDatas();
         initDatas2();
         initDatas3();
+        initDatas4();
+        initDatas5();
+        initDatas6();
     }
 
     private void initView() {
         excelVertical = findViewById(R.id.view_excel);
         excelVertical2 = findViewById(R.id.view_excel2);
         excelVertical3 = findViewById(R.id.view_excel3);
+        excelVertical4 = findViewById(R.id.view_excel4);
+        excelVertical5 = findViewById(R.id.view_excel5);
+        excelVertical6 = findViewById(R.id.view_excel6);
     }
 
     private void initDatas() {
@@ -58,5 +64,27 @@ public class VerticalExcelActivity extends AppCompatActivity {
         excelVertical3.showVerticalExcel(formData);
     }
 
+    private void initDatas4() {
+        String json = GsonUtil.getOriginalFundData(getBaseContext(),"vertical4.json");
+        JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
+        ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
+        ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
+        excelVertical4.showVerticalExcel(formData);
+    }
 
+    private void initDatas5() {
+        String json = GsonUtil.getOriginalFundData(getBaseContext(),"vertical5.json");
+        JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
+        ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
+        ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
+        excelVertical5.showVerticalExcel(formData);
+    }
+
+    private void initDatas6() {
+        String json = GsonUtil.getOriginalFundData(getBaseContext(),"vertical6.json");
+        JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
+        ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
+        ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
+        excelVertical6.showVerticalExcel(formData);
+    }
 }

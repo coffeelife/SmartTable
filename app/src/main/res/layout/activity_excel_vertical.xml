@@ -81,5 +81,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不带排序带下钻"
+            android:padding="10dp"
+            android:textSize="16dp" />
+
+        <com.example.myapplication.ExcelView.SmartExcelView
+            android:id="@+id/view_excel7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 </ScrollView>

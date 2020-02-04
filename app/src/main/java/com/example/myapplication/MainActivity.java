@@ -48,10 +48,31 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), menus.get(position).getName(), Toast.LENGTH_LONG).show();
                 switch (position) {
                     case 0:
-                        Intent intent = new Intent(getBaseContext(),VerticalExcelActivity.class);
+                        Intent intent = new Intent(getBaseContext(), VerticalExcelActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         getBaseContext().startActivity(intent);
                         break;
+                    case 1:
+                        Intent intent2 = new Intent(getBaseContext(), LandExcelActivity.class);
+                        intent2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        getBaseContext().startActivity(intent2);
+                        break;
+                    case 2:
+                        Intent intent3 = new Intent(getBaseContext(), RefreshExcelActivity.class);
+                        intent3.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        getBaseContext().startActivity(intent3);
+                        break;
+                    case 3:
+                        Intent intent4 = new Intent(getBaseContext(), FixedExcelActivity.class);
+                        intent4.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        getBaseContext().startActivity(intent4);
+                        break;
+                    case 4:
+                        Intent intent5 = new Intent(getBaseContext(), MultiExcelActivity.class);
+                        intent5.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        getBaseContext().startActivity(intent5);
+                        break;
+
                     default:
                         break;
                 }

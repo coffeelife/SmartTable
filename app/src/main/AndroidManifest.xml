@@ -24,12 +24,12 @@
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
         <activity android:name=".LandExcelActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
         </activity>
         <activity android:name=".RefreshExcelActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
         </activity>
         <activity android:name=".FixedExcelActivity"

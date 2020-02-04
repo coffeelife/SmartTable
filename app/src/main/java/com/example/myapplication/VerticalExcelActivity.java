@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * 竖向表格
  */
 public class VerticalExcelActivity extends AppCompatActivity {
-    private SmartExcelView excelVertical,excelVertical2,excelVertical3,excelVertical4,excelVertical5,excelVertical6;
+    private SmartExcelView excelVertical,excelVertical2,excelVertical3,excelVertical4,excelVertical5,excelVertical6,excelVertical7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class VerticalExcelActivity extends AppCompatActivity {
         initDatas4();
         initDatas5();
         initDatas6();
+        initDatas7();
     }
 
     private void initView() {
@@ -38,6 +39,7 @@ public class VerticalExcelActivity extends AppCompatActivity {
         excelVertical4 = findViewById(R.id.view_excel4);
         excelVertical5 = findViewById(R.id.view_excel5);
         excelVertical6 = findViewById(R.id.view_excel6);
+        excelVertical7 = findViewById(R.id.view_excel7);
     }
 
     private void initDatas() {
@@ -45,7 +47,7 @@ public class VerticalExcelActivity extends AppCompatActivity {
         JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
         ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
         ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
-        excelVertical.showVerticalExcel(formData);
+        if (excelVertical != null) excelVertical.showVerticalExcel(formData);
     }
 
     private void initDatas2() {
@@ -53,7 +55,7 @@ public class VerticalExcelActivity extends AppCompatActivity {
         JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
         ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
         ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
-        excelVertical2.showVerticalExcel(formData);
+        if (excelVertical2 != null)  excelVertical2.showVerticalExcel(formData);
     }
 
     private void initDatas3() {
@@ -61,7 +63,7 @@ public class VerticalExcelActivity extends AppCompatActivity {
         JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
         ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
         ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
-        excelVertical3.showVerticalExcel(formData);
+        if (excelVertical3 != null)  excelVertical3.showVerticalExcel(formData);
     }
 
     private void initDatas4() {
@@ -69,7 +71,7 @@ public class VerticalExcelActivity extends AppCompatActivity {
         JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
         ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
         ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
-        excelVertical4.showVerticalExcel(formData);
+        if (excelVertical4 != null)  excelVertical4.showVerticalExcel(formData);
     }
 
     private void initDatas5() {
@@ -77,7 +79,7 @@ public class VerticalExcelActivity extends AppCompatActivity {
         JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
         ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
         ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
-        excelVertical5.showVerticalExcel(formData);
+        if (excelVertical5 != null)  excelVertical5.showVerticalExcel(formData);
     }
 
     private void initDatas6() {
@@ -85,6 +87,14 @@ public class VerticalExcelActivity extends AppCompatActivity {
         JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
         ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
         ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
-        excelVertical6.showVerticalExcel(formData);
+        if (excelVertical6 != null)  excelVertical6.showVerticalExcel(formData);
+    }
+
+    private void initDatas7() {
+        String json = GsonUtil.getOriginalFundData(getBaseContext(),"vertical6.json");
+        JsonObject jsonObject = GsonUtil.getRootJsonObject(json);
+        ExcelData data = GsonUtil.JsonObjectToBean(jsonObject, ExcelData.class);
+        ExcelParseUtils.ExcelFormData formData = ExcelParseUtils.parse(data);
+        if (excelVertical7 != null)  excelVertical7.showVerticalExcel(formData);
     }
 }

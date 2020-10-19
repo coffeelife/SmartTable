@@ -34,7 +34,7 @@
         </activity>
         <activity android:name=".FixedExcelActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
         </activity>
         <activity android:name=".MultiExcelActivity"

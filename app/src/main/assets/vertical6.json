@@ -131,17 +131,17 @@
       "value": "表头1"
     },
     {
-      "isOrderBy": 1,
+      "isOrderBy": 2,
       "key": "col0",
       "value": "表头2"
     },
     {
-      "isOrderBy": 1,
+      "isOrderBy": 2,
       "key": "col1",
       "value": "表头3"
     },
     {
-      "isOrderBy": 1,
+      "isOrderBy": 2,
       "key": "col2",
       "value": "表头4"
     }

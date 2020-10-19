@@ -595,7 +595,7 @@ public class SmartExcelView extends FrameLayout {
                             }
                         });
                     } else {
-                        curColumn.setTitleAlign(Paint.Align.RIGHT);
+                        curColumn.setTitleAlign(Paint.Align.CENTER);
                         curColumn.setTextAlign(Paint.Align.CENTER);
                         if (isAuto) curColumn.setDrawFormat(new MultiLineDrawFormat<String>(columnW));
                         if (i > 0 && !ArrayUtils.isEmpty(mExcelFormData.isOrders) && mExcelFormData.isOrders.size() > (i - 2)) {
@@ -654,7 +654,7 @@ public class SmartExcelView extends FrameLayout {
                             }
                         });
                     } else {
-                        curColumn.setTitleAlign(Paint.Align.RIGHT);
+                        curColumn.setTitleAlign(Paint.Align.CENTER);
                         curColumn.setTextAlign(Paint.Align.CENTER);
                         if (isAuto) curColumn.setDrawFormat(new MultiLineDrawFormat<String>(columnW));
                     }
@@ -758,7 +758,7 @@ public class SmartExcelView extends FrameLayout {
                             }
                         });
                     } else {
-                        curColumn.setTitleAlign(Paint.Align.RIGHT);
+                        curColumn.setTitleAlign(Paint.Align.CENTER);
                         curColumn.setTextAlign(Paint.Align.CENTER);
                         if (isAuto) curColumn.setDrawFormat(new MultiLineDrawFormat<String>(columnW));
                         if (!ArrayUtils.isEmpty(mExcelFormData.isOrders) && mExcelFormData.isOrders.size() > (i - 1)) {
@@ -812,7 +812,7 @@ public class SmartExcelView extends FrameLayout {
                             }
                         });
                     } else {
-                        curColumn.setTitleAlign(Paint.Align.RIGHT);
+                        curColumn.setTitleAlign(Paint.Align.CENTER);
                         curColumn.setTextAlign(Paint.Align.CENTER);
                         if (isAuto) curColumn.setDrawFormat(new MultiLineDrawFormat<String>(columnW));
                     }
@@ -1582,7 +1582,7 @@ public class SmartExcelView extends FrameLayout {
                         curColumn.setFixed(true);
                         curColumn.setSorted(false);
                         curColumn.setTextAlign(Paint.Align.RIGHT);
-                        curColumn.setTitleAlign(Paint.Align.RIGHT);
+                        curColumn.setTitleAlign(Paint.Align.CENTER);
                     } else if (i == 1) {
                         curColumn.setFixed(true);
                         if (!ArrayUtils.isEmpty(mExcelFormData.isOrders) && mExcelFormData.isOrders.size() > 0) {
@@ -1671,7 +1671,7 @@ public class SmartExcelView extends FrameLayout {
                         curColumn.setFixed(true);
                         curColumn.setSorted(false);
                         curColumn.setTextAlign(Paint.Align.RIGHT);
-                        curColumn.setTitleAlign(Paint.Align.RIGHT);
+                        curColumn.setTitleAlign(Paint.Align.CENTER);
                     } else if (i == 1) {
                         curColumn.setFixed(true);
                         curColumn.setShowColumnTitleVerticalLine(true);
@@ -2112,7 +2112,7 @@ public class SmartExcelView extends FrameLayout {
                     curColumn.setDrawFormat(new FirTextDrawFormat<String>(mContext, firColumnWdith));
                     curColumn.setFixed(true);
                     curColumn.setSorted(false);
-                    curColumn.setTitleAlign(Paint.Align.RIGHT);
+                    curColumn.setTitleAlign(Paint.Align.CENTER);
                     curColumn.setTextAlign(Paint.Align.RIGHT);
                 } else if (i == 1) {
                     curColumn.setFixed(true);
